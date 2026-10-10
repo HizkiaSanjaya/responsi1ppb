@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment (jangan commit kunci rahasia)
+.env
+.env.local
+
+# Build & cache
+.vercel/
+.next/
+dist/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
