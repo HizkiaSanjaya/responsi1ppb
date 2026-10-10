@@ -26,6 +26,11 @@ Proyek ini menyediakan antarmuka HTTP untuk operasi **CRUD** data peminjaman buk
 
 Selain itu tersedia **fitur filter query**, misalnya `GET /loans?status=Terlambat` untuk menampilkan peminjaman yang melewati jatuh tempo. Status peminjaman dihitung otomatis oleh basis data (melalui trigger) sehingga nilainya selalu konsisten dengan tanggal pinjam, jatuh tempo, dan tanggal kembali.
 
+**Link terkait:**
+
+- Repository GitHub: https://github.com/HizkiaSanjaya/responsi1ppb
+- Deployment Vercel: https://responsi1ppb.vercel.app
+
 ## Teknologi
 
 | Komponen    | Teknologi                                        |
@@ -86,7 +91,7 @@ Nilai `status` tidak diisi manual, melainkan dihitung oleh *trigger* `set_status
 
 ## Endpoint & Contoh Request/Response
 
-Base URL lokal: `http://localhost:3000` · Base URL Vercel: lihat bagian [Deployment](#deployment-ke-vercel).
+Base URL lokal: `http://localhost:3000` · Base URL produksi: **https://responsi1ppb.vercel.app**
 
 ### Ringkasan Endpoint
 
@@ -347,10 +352,11 @@ vercel --prod
 
 ### Hasil Deployment
 
-- **Base URL**: `https://<nama-proyek>.vercel.app`
-- Contoh uji: `https://<nama-proyek>.vercel.app/loans?status=Terlambat`
-
-> Ganti `<nama-proyek>` dengan nama proyek Vercel yang terdaftar setelah deploy.
+- **Base URL**: https://responsi1ppb.vercel.app
+- Contoh uji:
+  - https://responsi1ppb.vercel.app/health
+  - https://responsi1ppb.vercel.app/loans
+  - https://responsi1ppb.vercel.app/loans?status=Terlambat
 
 ## Struktur Proyek
 
